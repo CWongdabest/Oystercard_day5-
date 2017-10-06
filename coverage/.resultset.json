@@ -1,7 +1,48 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/cwong/Documents/oystercard/oystercard_day5/spec/oystercard_spec.rb": [
+      "/Users/georgelamprakis/makers_challenges/week_2/Oystercard_day5-/spec/journey_spec.rb": [
+        1,
+        null,
+        1,
+        5,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/georgelamprakis/makers_challenges/week_2/Oystercard_day5-/lib/journey.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/georgelamprakis/makers_challenges/week_2/Oystercard_day5-/spec/oystercard_spec.rb": [
         1,
         null,
         1,
@@ -99,7 +140,7 @@
         null,
         null
       ],
-      "/Users/cwong/Documents/oystercard/oystercard_day5/lib/oystercard.rb": [
+      "/Users/georgelamprakis/makers_challenges/week_2/Oystercard_day5-/lib/oystercard.rb": [
         1,
         1,
         null,
@@ -157,8 +198,43 @@
         null,
         null,
         null
+      ],
+      "/Users/georgelamprakis/makers_challenges/week_2/Oystercard_day5-/spec/station_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        3,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/georgelamprakis/makers_challenges/week_2/Oystercard_day5-/lib/station.rb": [
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1507282635
+    "timestamp": 1507291336
   }
 }
