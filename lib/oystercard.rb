@@ -5,9 +5,8 @@ class Oystercard
   MAXIMUM_BALANCE = 90
   MINIMUM_BALANCE = 1
   MINIMUM_FARE = 1
-  EMPTY_JOURNEY = []
 
-  def initialize(balance = DEFAULT_BALANCE, journey = EMPTY_JOURNEY)
+  def initialize(balance = DEFAULT_BALANCE)
     @balance = balance
     @journey = []
     @this_journey = {}

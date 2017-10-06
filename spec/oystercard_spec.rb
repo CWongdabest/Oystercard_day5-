@@ -78,6 +78,7 @@ context 'touched in and out' do
   end
 
   it 'records one journey when user touch_in, followed by touch_out' do
+    p oystercard.journey
     expect(oystercard.journey.count).to eq(1)
   end
 

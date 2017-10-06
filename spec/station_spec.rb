@@ -2,19 +2,16 @@ require 'station'
 
 describe Station do
 
-subject(:station) { described_class.new(name, zone)}
-let(:name) {double :name}
-let(:zone) {double :zone}
+subject(:station) { described_class.new(name: 'name', zone: 1)}
 
-
-it {is_expected.to respond_to(:info)}
 
 it 'is expected to display station name info as required' do
-  expect(station.info[:name]).to eq(name)
+  expect(station.name).to eq('name')
 end
 
 it 'is expected to display station zone info as required' do
-  expect(station.info[:zone]).to eq(zone)
+  expect(station.zone).to eq(1)
 end
+
 
 end

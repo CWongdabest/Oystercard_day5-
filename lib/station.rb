@@ -1,17 +1,14 @@
 
 
 class Station
+  attr_reader :name, :zone
 
-  def initialize(name, zone)
-    @name = name
-    @zone = zone
-    @info = {}
-  end
-
-  def info
-    @info[:name] = @name
-    @info[:zone] = @zone
-    @info
+  def initialize(station_info)
+    @name = station_info[:name]
+    @zone = station_info[:zone]
   end
 
 end
+
+
+#=> {name: "Algate", zone: 2}
