@@ -5,7 +5,7 @@ class Oystercard
   DEFAULT_BALANCE = 0
   MAXIMUM_BALANCE = 90
   MINIMUM_BALANCE = 1
-  
+
 
   def initialize(balance = DEFAULT_BALANCE)
     @balance = balance
@@ -19,19 +19,27 @@ class Oystercard
 
   def touch_in(entry_station)
     fail 'insufficient fund' if fund_sufficient?
-    create_journey(entry_station) unless current_journey
+    # create_journey(entry_station) unless current_journey
+
+
+     if current_journey
+       end_journey(exit_station)
+     end
+       create_journey(entry_station)
+
   end
 
   def touch_out(exit_station)
-    create_journey(entry_station) unless current_journey  
+    create_journey(entry_station) unless current_journey
     end_journey(exit_station)
   end
 
-      
+
   def end_journey(exit_station)
     current_journey.finish(exit_station)
     deduct(current_journey.calculate_fare)
     @journey_history << current_journey
+    @current_journey = nil
   end
 
   def create_journey(entry_station)
